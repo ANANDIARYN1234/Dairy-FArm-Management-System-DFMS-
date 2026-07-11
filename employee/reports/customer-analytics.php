@@ -305,14 +305,14 @@ include '../../includes/header.php';
     </div>
 
     <!-- Note about tracking -->
-    <div class="info-box" style="background: #fff3cd; border-color: #ffc107;">
+    <!-- <div class="info-box" style="background: #fff3cd; border-color: #ffc107;">
         <strong>📌 Note:</strong>
         <p style="margin-bottom: 0;">
             This report shows customers based on when you first made a sale for them. 
             To improve tracking, consider adding a "created_by" field to the customer table 
             to accurately track who added each customer to the system.
         </p>
-    </div>
+    </div> -->
 </div>
 
 <script>

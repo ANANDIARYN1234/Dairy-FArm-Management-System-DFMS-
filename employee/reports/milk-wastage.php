@@ -94,7 +94,7 @@ include '../../includes/header.php';
             <div class="stat-icon">🗑️</div>
             <div class="stat-details">
                 <span class="stat-label">Expired Records</span>
-                <span class="stat-value"><?php echo $summary['total_records']; ?></span>
+                <span class="stat-value"><?php echo $summary['total_records'] ?? 0; ?></span>
                 <small style="color: var(--text-medium);">Milk batches</small>
             </div>
         </div>
@@ -103,7 +103,7 @@ include '../../includes/header.php';
             <div class="stat-icon">🥛</div>
             <div class="stat-details">
                 <span class="stat-label">Total Wasted</span>
-                <span class="stat-value"><?php echo number_format($summary['total_wasted'], 2); ?> L</span>
+                <span class="stat-value"><?php echo number_format($summary['total_wasted'] ?? 0, 2); ?> L</span>
                 <small style="color: var(--text-medium);">Not sold in time</small>
             </div>
         </div>
@@ -112,7 +112,7 @@ include '../../includes/header.php';
             <div class="stat-icon">💸</div>
             <div class="stat-details">
                 <span class="stat-label">Estimated Loss</span>
-                <span class="stat-value">रू <?php echo number_format($summary['total_loss'], 2); ?></span>
+                <span class="stat-value">रू <?php echo number_format($summary['total_loss'] ?? 0, 2); ?></span>
                 <small style="color: var(--text-medium);">@ Retail price</small>
             </div>
         </div>
